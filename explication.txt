@@ -1,0 +1,15 @@
+created git repo 
+composer create-project --prefer-dist laravel/laravel ecommerce // enter this line to create laravel project inside the repo and get all the necessary files for lara
+update the .env file where it holds valuable infos about database that wont be shared on github for its importance
+install composer to get the vendor folder so you type the command "composer install --ignore-platform-req=ext-fileinfo" without composer and vendor folder we can't use php artisan
+create new database migration files with the command php artisan make:migration create_products_table now in the database folder in migration folder we have create_products_table.php
+    php artisan is the artisan command-line interface included in laravel that contains numbers of commands for various taks
+    make:migration this part tells the artisan to create a new migration file ,migration in laravel are used to define changes to the database such as creating,modifying or deleting tables
+    create_products_table is the name of the migration that will be created
+
+Do the same to create other migrations for different tables in the database 
+    php artisan make:migration create_orders_table
+    php artisan make:migration create_order_list_table
+    php artisan make:migration create_users_table
+
+update each of the files in migration to add the attributs that we want to the tables
